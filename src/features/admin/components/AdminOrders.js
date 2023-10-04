@@ -8,6 +8,8 @@ import {
   updateOrderAsync,
 } from '../../order/orderSlice';
 import { ITEMS_PER_PAGE } from '../../../app/constants';
+import { deleteItemOrderAsync } from '../../order/orderAPI';
+import swal from 'sweetalert';
 const AdminOrders = () => {
   const cols = [
     {
@@ -95,18 +97,15 @@ const AdminOrders = () => {
       selector: (row) => (
         <>
           <button
-            onClick={(e) => handleShow(e, row)}
-            className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-          >
-            <i className="fa-solid fa-eye"></i>
-          </button>{' '}
-          <button
             onClick={() => handleEdit(row.id)}
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
           >
             <i className="fa-solid fa-pen-to-square"></i>
           </button>
-          <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          <button
+            onClick={() => handleDelete(row.id)}
+            className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+          >
             <i className="fa-solid fa-trash-can"></i>
           </button>{' '}
         </>
@@ -122,14 +121,6 @@ const AdminOrders = () => {
   const [editTableOrderId, setEditTableOrderId] = useState(-1);
 
   /**
-   * GET ALl Orders
-   */
-  useEffect(() => {
-    const pagination = { _page: page, _limit: ITEMS_PER_PAGE };
-    dispatch(fetchAllOrdersAsync(pagination));
-  }, [dispatch, page]);
-
-  /**
    * Handle Edit ID
    * @param {*} order
    */
@@ -141,8 +132,24 @@ const AdminOrders = () => {
    * Handle Show Product
    * @param {*} order
    */
-  const handleShow = (order) => {
-    dispatch();
+  const handleDelete = (order) => {
+    swal({
+      title: 'Are you sure?',
+      text: 'Once deleted, you will not be able to recover this imaginary file!',
+      icon: 'warning',
+      buttons: true,
+      dangerMode: true,
+    }).then((willDelete) => {
+      if (willDelete) {
+        dispatch(deleteItemOrderAsync(order));
+
+        swal('Poof! Your imaginary file has been deleted!', {
+          icon: 'success',
+        });
+      } else {
+        swal('Your imaginary file is safe!');
+      }
+    });
   };
 
   /**
@@ -175,6 +182,14 @@ const AdminOrders = () => {
         return 'bg-purple-200 text-purple-600';
     }
   };
+  /**
+   * GET ALl Orders
+   */
+  useEffect(() => {
+    // const pagination = { _page: page, _limit: ITEMS_PER_PAGE };
+    dispatch(fetchAllOrdersAsync());
+  }, [dispatch, page]);
+
   return (
     <>
       <div className="overflow-x-auto">
@@ -184,7 +199,7 @@ const AdminOrders = () => {
               <DataTables
                 fixedHeader
                 pagination
-                title="All Products Data"
+                title="All Orders Data"
                 columns={cols}
                 data={orders}
                 // onSelectedRowsChange={handleRowSelect}

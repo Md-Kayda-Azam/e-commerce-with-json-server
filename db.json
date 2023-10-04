@@ -21,7 +21,7 @@
     },
     {
       "id": 2,
-      "title": "iPhone X",
+      "title": "iPhone A",
       "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
       "price": 1111,
       "discountPercentage": 17.94,
@@ -33,8 +33,7 @@
       "images": [
         "https://i.dummyjson.com/data/products/2/1.jpg",
         "https://i.dummyjson.com/data/products/2/2.jpg",
-        "https://i.dummyjson.com/data/products/2/3.jpg",
-        "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
+        "https://i.dummyjson.com/data/products/2/3.jpg"
       ],
       "deleted": true
     },
@@ -56,7 +55,7 @@
     },
     {
       "id": 4,
-      "title": "OPPOF19",
+      "title": "OPPOF19 A",
       "description": "OPPO F19 is officially announced on April 2021.",
       "price": 300,
       "discountPercentage": 17.91,
@@ -68,8 +67,7 @@
       "images": [
         "https://i.dummyjson.com/data/products/4/1.jpg",
         "https://i.dummyjson.com/data/products/4/2.jpg",
-        "https://i.dummyjson.com/data/products/4/3.jpg",
-        "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
+        "https://i.dummyjson.com/data/products/4/3.jpg"
       ]
     },
     {
@@ -1856,6 +1854,22 @@
         "https://i.dummyjson.com/data/products/6/thumbnail.png"
       ],
       "id": 101
+    },
+    {
+      "title": "Apple 15 pro",
+      "description": "This product is a world top phone",
+      "price": "1550",
+      "discountPercentage": "1500",
+      "stock": "20",
+      "category": "smartphones",
+      "brand": "Apple",
+      "thumbnail": "https://i.dummyjson.com/data/products/2/thumbnail.jpg",
+      "images": [
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/1.jpg",
+        "https://i.dummyjson.com/data/products/2/1.jpg"
+      ],
+      "id": 102
     }
   ],
   "brands": [
@@ -2354,12 +2368,19 @@
   ],
   "users": [
     {
+      "email": "mdkaydaazam1@gmail.com",
+      "password": "asdfG123",
+      "addresses": [],
+      "role": "admin",
+      "id": 1
+    },
+    {
       "email": "afsana1@gmail.com",
       "password": "Asdfg123",
       "addresses": [
         {
-          "name": "Md Kayda Azam",
-          "email": "mdkaydaazam1@gmail.com",
+          "name": "Afsana Akter",
+          "email": "afsana1@gmail.com",
           "phone": "01750910188",
           "country": "Canada",
           "street": "11th main",
@@ -2369,63 +2390,63 @@
         }
       ],
       "role": "user",
-      "id": 1
-    }
-  ],
-  "cart": [
+      "id": 2
+    },
     {
-      "id": 5,
-      "title": "Huawei P30",
-      "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-      "price": 499,
-      "discountPercentage": 10.58,
-      "rating": 4.09,
-      "stock": 32,
-      "brand": "Huawei",
-      "category": "smartphones",
-      "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-      "images": [
-        "https://i.dummyjson.com/data/products/5/1.jpg",
-        "https://i.dummyjson.com/data/products/5/2.jpg",
-        "https://i.dummyjson.com/data/products/5/3.jpg"
+      "email": "jannatun@gmail.com",
+      "password": "Asdfg123",
+      "addresses": [
+        {
+          "name": "Jannat Akter",
+          "email": "jannatun@gmail.com",
+          "phone": "01750910188",
+          "country": "Canada",
+          "street": "11th main",
+          "city": "Dinajpur",
+          "state": "Dinajpur",
+          "pinCode": "2526"
+        }
       ],
-      "quantity": 3,
-      "user": 1
+      "role": "user",
+      "id": 3
     }
   ],
+  "cart": [],
   "orders": [
     {
       "items": [
         {
-          "id": 5,
-          "title": "Huawei P30",
-          "description": "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-          "price": 499,
-          "discountPercentage": 10.58,
-          "rating": 4.09,
-          "stock": 32,
-          "brand": "Huawei",
-          "category": "smartphones",
-          "thumbnail": "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
+          "id": 26,
+          "title": "Plant Hanger For Home",
+          "description": "Boho Decor Plant Hanger For Home Wall Decoration Macrame Wall Hanging Shelf",
+          "price": 41,
+          "discountPercentage": 17.86,
+          "rating": 4.08,
+          "stock": 131,
+          "brand": "Boho Decor",
+          "category": "home-decoration",
+          "thumbnail": "https://i.dummyjson.com/data/products/26/thumbnail.jpg",
           "images": [
-            "https://i.dummyjson.com/data/products/5/1.jpg",
-            "https://i.dummyjson.com/data/products/5/2.jpg",
-            "https://i.dummyjson.com/data/products/5/3.jpg"
+            "https://i.dummyjson.com/data/products/26/1.jpg",
+            "https://i.dummyjson.com/data/products/26/2.jpg",
+            "https://i.dummyjson.com/data/products/26/3.jpg",
+            "https://i.dummyjson.com/data/products/26/4.jpg",
+            "https://i.dummyjson.com/data/products/26/5.jpg",
+            "https://i.dummyjson.com/data/products/26/thumbnail.jpg"
           ],
           "quantity": 1,
-          "user": 1,
-          "apiId": "v1"
+          "user": 2
         }
       ],
-      "totalAmount": 499,
+      "totalAmount": 41,
       "totalItems": 1,
       "user": {
         "email": "afsana1@gmail.com",
         "password": "Asdfg123",
         "addresses": [
           {
-            "name": "Md Kayda Azam",
-            "email": "mdkaydaazam1@gmail.com",
+            "name": "Afsana Akter",
+            "email": "afsana1@gmail.com",
             "phone": "01750910188",
             "country": "Canada",
             "street": "11th main",
@@ -2435,12 +2456,12 @@
           }
         ],
         "role": "user",
-        "id": 1
+        "id": 2
       },
-      "paymentMethod": "card",
+      "paymentMethod": "cash",
       "selectedAddressMethed": {
-        "name": "Md Kayda Azam",
-        "email": "mdkaydaazam1@gmail.com",
+        "name": "Afsana Akter",
+        "email": "afsana1@gmail.com",
         "phone": "01750910188",
         "country": "Canada",
         "street": "11th main",
@@ -2449,42 +2470,41 @@
         "pinCode": "2526"
       },
       "status": "Pending",
-      "id": 1
+      "id": 10
     },
     {
       "items": [
         {
-          "id": 9,
-          "title": "Infinix INBOOK",
-          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
-          "price": 1099,
-          "discountPercentage": 11.83,
-          "rating": 4.54,
-          "stock": 96,
-          "brand": "Infinix",
-          "category": "laptops",
-          "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+          "id": 31,
+          "title": "Mornadi Velvet Bed",
+          "description": "Mornadi Velvet Bed Base with Headboard Slats Support Classic Style Bedroom Furniture Bed Set",
+          "price": 40,
+          "discountPercentage": 17,
+          "rating": 4.16,
+          "stock": 140,
+          "brand": "Furniture Bed Set",
+          "category": "furniture",
+          "thumbnail": "https://i.dummyjson.com/data/products/31/thumbnail.jpg",
           "images": [
-            "https://i.dummyjson.com/data/products/9/1.jpg",
-            "https://i.dummyjson.com/data/products/9/2.png",
-            "https://i.dummyjson.com/data/products/9/3.png",
-            "https://i.dummyjson.com/data/products/9/4.jpg",
-            "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+            "https://i.dummyjson.com/data/products/31/1.jpg",
+            "https://i.dummyjson.com/data/products/31/2.jpg",
+            "https://i.dummyjson.com/data/products/31/3.jpg",
+            "https://i.dummyjson.com/data/products/31/4.jpg",
+            "https://i.dummyjson.com/data/products/31/thumbnail.jpg"
           ],
           "quantity": 1,
-          "user": 1,
-          "apiId": "v1"
+          "user": 2
         }
       ],
-      "totalAmount": 1099,
+      "totalAmount": 40,
       "totalItems": 1,
       "user": {
         "email": "afsana1@gmail.com",
         "password": "Asdfg123",
         "addresses": [
           {
-            "name": "Md Kayda Azam",
-            "email": "mdkaydaazam1@gmail.com",
+            "name": "Afsana Akter",
+            "email": "afsana1@gmail.com",
             "phone": "01750910188",
             "country": "Canada",
             "street": "11th main",
@@ -2494,71 +2514,12 @@
           }
         ],
         "role": "user",
-        "id": 1
+        "id": 2
       },
       "paymentMethod": "card",
       "selectedAddressMethed": {
-        "name": "Md Kayda Azam",
-        "email": "mdkaydaazam1@gmail.com",
-        "phone": "01750910188",
-        "country": "Canada",
-        "street": "11th main",
-        "city": "Dinajpur",
-        "state": "Dinajpur",
-        "pinCode": "2526"
-      },
-      "status": "Pending",
-      "id": 2
-    },
-    {
-      "items": [
-        {
-          "id": 13,
-          "title": "Fog Scent Xpressio Perfume",
-          "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
-          "price": 13,
-          "discountPercentage": 8.14,
-          "rating": 4.59,
-          "stock": 61,
-          "brand": "Fog Scent Xpressio",
-          "category": "fragrances",
-          "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
-          "images": [
-            "https://i.dummyjson.com/data/products/13/1.jpg",
-            "https://i.dummyjson.com/data/products/13/2.png",
-            "https://i.dummyjson.com/data/products/13/3.jpg",
-            "https://i.dummyjson.com/data/products/13/4.jpg",
-            "https://i.dummyjson.com/data/products/13/thumbnail.webp"
-          ],
-          "quantity": 1,
-          "user": 1,
-          "apiId": "v1"
-        }
-      ],
-      "totalAmount": 13,
-      "totalItems": 1,
-      "user": {
+        "name": "Afsana Akter",
         "email": "afsana1@gmail.com",
-        "password": "Asdfg123",
-        "addresses": [
-          {
-            "name": "Md Kayda Azam",
-            "email": "mdkaydaazam1@gmail.com",
-            "phone": "01750910188",
-            "country": "Canada",
-            "street": "11th main",
-            "city": "Dinajpur",
-            "state": "Dinajpur",
-            "pinCode": "2526"
-          }
-        ],
-        "role": "user",
-        "id": 1
-      },
-      "paymentMethod": "card",
-      "selectedAddressMethed": {
-        "name": "Md Kayda Azam",
-        "email": "mdkaydaazam1@gmail.com",
         "phone": "01750910188",
         "country": "Canada",
         "street": "11th main",
@@ -2567,7 +2528,7 @@
         "pinCode": "2526"
       },
       "status": "Pending",
-      "id": 3
+      "id": 11
     }
   ]
 }
